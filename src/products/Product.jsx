@@ -14,7 +14,7 @@ const Product = () => {
   return (
     <div className=' flex justify-center font-medium mt-10'>
         <h1 className=' font-semibold'>List of Products</h1>
-       <ul>
+        <ul>
             {
                 productLists?.length > 0 ? (
                     productLists.map((product) => 
