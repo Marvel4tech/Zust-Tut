@@ -1,9 +1,9 @@
 import useCounter from "../store/useCounterStore"
 
 export const CounterValue = () => {
-    const count = useCounter(state => state)
+    const stateValue = useCounter(state => state)
 
-    console.log(count)
+    console.log(stateValue)
 
     return (
         <div className=" text-center font-medium">
