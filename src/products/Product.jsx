@@ -9,19 +9,20 @@ const Product = () => {
         fetchProducts()
     }, [])
 
+    console.log(productLists)
+
   return (
-    <div className=' text-center font-medium mt-10'>
+    <div className=' flex justify-center font-medium mt-10'>
         <h1 className=' font-semibold'>List of Products</h1>
        <ul>
             {
                 productLists?.length > 0 ? (
-                    productLists.map((product, i) => {
-                        <div key={i}>
+                    productLists.map((product) => 
+                        <div key={product.id}>
                             <p>{product?.title}</p>
                             <img src={product?.thumbnail} alt="" />
                         </div>
-                    })
-                ) : <p>No Products Listed</p>
+                )) : (<p>No Products Listed</p>)
             }
        </ul>
     </div>
