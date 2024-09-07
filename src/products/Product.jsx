@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import useCounter from '../store/useCounterStore'
+import useCounter, { useActions } from '../store/useCounterStore'
 
 const Product = () => {
-    const fetchProducts = useCounter((state) => state.fetchListOfProducts)
+    const {fetchListOfProducts} = useActions()
     const productLists = useCounter((state) => state.listOfProducts)
 
     useEffect(() => {
-        fetchProducts()
+        fetchListOfProducts()
     }, [])
 
     console.log(productLists)
