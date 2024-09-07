@@ -12,9 +12,9 @@ const Product = () => {
     console.log(productLists)
 
   return (
-    <div className=' flex justify-center font-medium mt-10'>
+    <div className=' flex flex-col text-center font-medium mt-10'>
         <h1 className=' font-semibold'>List of Products</h1>
-        <ul>
+        <ul className=' flex flex-wrap justify-center text-center'>
             {
                 productLists?.length > 0 ? (
                     productLists.map((product) => 
