@@ -13,7 +13,7 @@ const Product = () => {
 
   return (
     <div className=' flex flex-col text-center font-medium mt-10'>
-        <h1 className=' font-semibold'>List of Products</h1>
+        <h1 className=' font-bold text-3xl mb-2'>List of Products</h1>
         <ul className=' flex flex-wrap justify-center text-center'>
             {
                 productLists?.length > 0 ? (
